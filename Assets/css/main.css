@@ -1,0 +1,475 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    
+    overflow-x: hidden;
+    background-color: white;
+    font-family: 'Trebuchet MS';
+    transition: 0.6s;
+    --text:rgb(255, 211, 211);
+    --inverser:#48487F;
+    --background: #48487F;
+    --amazon: linear-gradient(rgb(6, 6, 143), yellow );
+}
+
+.intro{
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    margin-left: 40%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 85, 62);
+}
+.intro h1{
+    max-width: 40%;
+}
+
+.about-section {
+    padding: 50px;
+    padding-top: 10%;
+    text-align: center;
+    color: #48487F;
+    font-family: 'Trebuchet MS';
+  }
+
+
+
+
+.socials{
+    z-index: -2;
+    padding-top: 200%;
+
+}
+
+.socials h1{
+    color: rgb(235, 73, 45);
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+
+.socials a{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    font-size: 30px;
+    color: grey;
+    transition: 0.5s;
+    padding-right: 5%;
+    
+}
+
+.socials .ig:hover{
+    animation: ig 10s infinite alternate;
+}
+
+.socials .fb:hover{
+    color: rgb(17, 17, 58);
+}
+
+.socials .ld:hover{
+    color: cornflowerblue;
+}
+.socials .tel:hover{
+    color: green;
+}
+.socials .ma:hover{
+    color: rgb(236, 53, 8);
+}
+
+.socials .ig:active{
+    color: purple;
+}
+.socials .wh:hover{
+    color: rgb(50, 252, 0);
+}
+
+.socials .wh:active{
+    color: rgb(21, 255, 0);
+}
+
+.socials .fb:active{
+    color: rgb(17, 17, 58);
+}
+
+.socials .ld:active{
+    color: cornflowerblue;
+}
+
+.socials .tel:active{
+    color: green;
+}
+.socials .ma:active{
+    color: rgb(236, 53, 8);
+}
+
+.bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:var(--background);
+    color: var(--text);
+    font-family: 'Alatsi', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    transition: 0.6s ease-in;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:6000px;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+.slideshow-container h1{
+    max-width: 500%;
+    padding: 0px;
+    padding-left: 0%;
+    text-align: center;
+    color: rgb(236, 71, 42);
+    font-family: 'Trebuchet MS';
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.links a:hover{
+    color: rgb(255, 126, 103);
+    font-size: 17px;
+}
+
+.name{
+    width: 150.5px;
+    height: 60px;
+}
+
+
+
+.logo{
+    color: rgb(133, 124, 124);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+ 
+    
+}
+
+.links li{
+    list-style: none;
+    
+}
+
+.links a{
+    color: rgb(252, 236, 236);
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-size: 15px;
+    }
+
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(252, 236, 236);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:20000px){
+    .links{
+      width: 60%;
+    }
+    .AbtHolder p{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and(max-height:640px){
+    .links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 15vh;
+    }
+
+
+}
+
+@media screen and (max-width:390px){
+
+
+    .links{
+        width: 20%;
+    }
+}
+@media screen and (max-width:768px){
+
+    .about-section{
+        padding-top: 30%;
+    }
+    .AbtHolder p{
+        font-size: 20px;
+    }
+
+    .links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:#48487F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+
+.navact{
+    transform: translateX(0%);
+}
+
+@keyframes linkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5.5px,4.5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-6px,-4.3px);
+}
+
+@keyframes ig{
+    0%{
+        color: #8a3ab9;
+    }
+
+    20%{
+        color: #e95950;
+    }
+    40%{
+        color: #bc2a8d;
+    }
+    60%{
+        color: #4c68d7;
+    }
+    80%{
+        color: #fbad50;
+    }
+    100%{
+        color: #cd486b;
+    }
+}
+
+.propertyboi{
+    padding: 200%,100%,0%,0%;
+}
+.AbtHolder h1{
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+    color: #48487F;
+}
+.AbtHolder p{
+    color: #48487F;
+    line-height: 50px;
+}
+
+.fader{
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity 500ms ease-in;
+    transition: transform 500ms ease;
+}
+
+.fader.app{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+.Products{
+    margin-top: 100%;
+    transition: 0.6s ease-in;
+}
+
+.Products h1{
+    color: #48487F;
+    font-size: 60px;
+}
+
+.Products a{
+    text-decoration: none;
+}
+
+.Products a:link{
+    text-decoration: none;
+    color: #48487F;
+    font-size: 20px;
+}
+.Products a:visited{
+    text-decoration: none;
+    color: #48487F;
+    font-size: 20px;
+}
+.Products a:hover{
+    text-decoration: none;
+    color: #48487F;
+    font-size: 20px;
+}
+.Products a:active{
+    text-decoration: none;
+    color: #48487F;
+    font-size: 20px;
+}
+
+.Products i{
+    color: #717171;
+    font-size: 30px;
+    transition: 0.6s ease-in;
+}
+.Products i:hover{
+    color: #070577;
+    font-size: 30px;
+}
+
