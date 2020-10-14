@@ -1,8 +1,8 @@
-const faders = document.querySelectorAll('.fader');
+const secfaders = document.querySelectorAll('.faders1');
 
 const options = {
-    threshold: 0.5,
-    rootmarg: "0px 0px -100px 0px"
+    threshold: 0,
+    rootmarg: "0px 0px -20px 0px"
 
 };
 
@@ -12,14 +12,14 @@ const apperscrol = new IntersectionObserver(function(entries, apperscrol) {
             return;
         }
         else{
-            entry.target.classList.add('app');
+            entry.target.classList.add('apps');
             apperscrol.unobserve(entry.target);
         }
         
     })
 }, options);
 
-faders.forEach(fader => {
-    apperscrol.observe(fader);
+secfaders.forEach(faders => {
+    apperscrol.observe(faders);
 })
 
