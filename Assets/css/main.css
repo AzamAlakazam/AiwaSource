@@ -11,7 +11,6 @@ body{
     --low: red;
     --normal: rgb(0, 0, 99);
     overflow-x: hidden;
-    background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-position-y: 100vh;
     background-clip: border-box;
@@ -55,7 +54,7 @@ body{
 
 .socials{
     z-index: -2;
-    margin-top: 200%;
+    margin-top: 1000%;
 
 }
 
@@ -273,7 +272,7 @@ body{
 .links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
  
     
 }
@@ -413,6 +412,7 @@ body{
 
 .propertyboi{
     margin-top: -1%;
+    margin-left: 0px;
 }
 
 .AbtHolder{
@@ -420,7 +420,7 @@ body{
     padding-right: 2%;
 }
 .AbtHolder h1{
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Trebuchet MS';
     color: #48487F;
 }
@@ -429,6 +429,7 @@ body{
 .AbtHolder p{
     color: #48487F;
     line-height: 50px;
+    font-size: 20px;
 }
 
 .fader{
@@ -467,6 +468,7 @@ body{
 .Products a{
     text-decoration: none;
     margin-top: 50px;
+    
 }
 
 .Products a:link{
@@ -496,16 +498,11 @@ body{
     font-size: 30px;
 }
 
-
-@media screen and (max-width:20000px){
-    .links{
-      width: 60%;
-    }
-    .AbtHolder p{
-        font-size: 30px;
-    }
-
+.Products h2{
+    text-decoration: underline;
 }
+
+
 
 @media screen and(max-height:640px){
     .links{
@@ -525,7 +522,7 @@ body{
 
 
     .links{
-        width: 20%;
+        width: 40%;
     }
 
     .topprod{
@@ -559,21 +556,10 @@ body{
 
 }
 
-#myInput {
-    background-color: rgb(202, 202, 202); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-
   @keyframes linkfade{
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(100px);
     }
     to{
         opacity: 1;
